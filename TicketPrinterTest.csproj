@@ -8,5 +8,10 @@
     <ItemGroup>
       <PackageReference Include="Zebra.Printer.SDK" Version="2.15.2634" />
     </ItemGroup>
+    <ItemGroup>
+        <Content Include="zpl/*">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
 
 </Project>

@@ -19,7 +19,7 @@ namespace TicketPrinterTest {
                 var zebraPrinter = ZebraPrinterFactory.GetInstance(connection);
                 
 
-                var path = $"{Directory.GetCurrentDirectory()}\\biostoom.prn";
+                var path = $"{Directory.GetCurrentDirectory()}\\zpl\\biostoom.prn";
                 var status = zebraPrinter?.GetCurrentStatus();
                 if (status != null && status.isReadyToPrint) {
                     var zpl = FormatZpl(path);
